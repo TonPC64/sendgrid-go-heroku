@@ -23,6 +23,7 @@
 [metadata.heroku]
   root-package = "github.com/kingkong64/sendgrid-go-heroku"
   go-version = "1.8.3"
+  ensure = true
 
 [[constraint]]
   name = "github.com/gin-gonic/gin"
