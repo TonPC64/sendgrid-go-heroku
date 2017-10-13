@@ -82,3 +82,40 @@ git commit -m 'deploy to heroku'
 git push heroku master
 ```
 
+### If results look like this:
+```
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Go app detected
+remote: -----> Checking Godeps/Godeps.json file.
+remote: -----> Using go1.8.4
+remote:  !!    Installing package '.' (default)
+remote:  !!
+remote: -----> Running: go install -v -tags heroku .
+remote: sendgrid-go-heroku/vendor/github.com/gin-contrib/sse
+remote: sendgrid-go-heroku/vendor/github.com/gin-gonic/gin/json
+remote: sendgrid-go-heroku/vendor/github.com/golang/protobuf/proto
+remote: sendgrid-go-heroku/vendor/github.com/ugorji/go/codec
+remote: sendgrid-go-heroku/vendor/gopkg.in/go-playground/validator.v8
+remote: sendgrid-go-heroku/vendor/gopkg.in/yaml.v2
+remote: sendgrid-go-heroku/vendor/github.com/mattn/go-isatty
+remote: sendgrid-go-heroku/vendor/github.com/sendgrid/rest
+remote: sendgrid-go-heroku/vendor/github.com/sendgrid/sendgrid-go/helpers/mail
+remote: sendgrid-go-heroku/vendor/github.com/sendgrid/sendgrid-go
+remote: sendgrid-go-heroku/vendor/github.com/gin-gonic/gin/binding
+remote: sendgrid-go-heroku/vendor/github.com/gin-gonic/gin/render
+remote: sendgrid-go-heroku/vendor/github.com/gin-gonic/gin
+remote: sendgrid-go-heroku
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 5.1M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://sendgrid-go-heroku.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+```
+## done.
