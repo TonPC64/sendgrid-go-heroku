@@ -1,3 +1,2 @@
-sendgrid.env
-sendgrid-heroku
+sendgrid-go-heroku
 vendor

@@ -1,1 +1,1 @@
-web: sendgrid-heroku
+web: sendgrid-go-heroku
