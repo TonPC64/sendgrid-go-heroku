@@ -2,9 +2,6 @@
 	"ImportPath": "github.com/user/sendgrid-go-heroku",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/gin-contrib/sse",
