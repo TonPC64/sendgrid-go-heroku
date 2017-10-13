@@ -20,7 +20,7 @@
 #  name = "github.com/x/y"
 #  version = "2.4.0"
 
-metadata.heroku['root-package']
+metadata.heroku['sendgrid-go-heroku']
 
 [[constraint]]
   name = "github.com/gin-gonic/gin"
