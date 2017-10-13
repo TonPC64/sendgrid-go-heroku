@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -10,14 +9,13 @@ import (
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
 )
 
-var sendgridkey = "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"
+var sendgridkey = "SENDGRID_API_KEY"
 
 func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
 		port = "5000"
-		// log.Fatal("$PORT must be set")
 	}
 	router := gin.New()
 	router.Use(gin.Logger())
@@ -29,11 +27,9 @@ func main() {
 func sendmail(c *gin.Context) {
 	to := c.Param("to")
 	res, err := sendmailWithSendGrid(to)
-	log.Println(res)
 	if err != nil {
-		c.JSON(400, nil)
+		c.JSON(400, err.Error())
 	} else {
-		log.Println(res.Body)
 		c.JSON(res.StatusCode, res.Body)
 	}
 
