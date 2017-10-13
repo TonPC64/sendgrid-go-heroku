@@ -20,6 +20,7 @@
 #  name = "github.com/x/y"
 #  version = "2.4.0"
 
+metadata.heroku['root-package']
 
 [[constraint]]
   name = "github.com/gin-gonic/gin"
